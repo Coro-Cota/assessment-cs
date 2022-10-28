@@ -1,0 +1,10 @@
+  let findLongestWord = (arr) => {
+    return arr.reduce((a, b) => a.length < b.length ? b : a, "");
+  }
+
+  let foundWord = findLongestWord(["hi", "hello"])
+  let strLength = foundWord.length
+
+  console.log(strLength);
+
+  //run time is O(n) space is O(1)
